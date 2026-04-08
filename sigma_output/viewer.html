@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sigma RfA Graph</title>
+  <style>
+    html, body, #container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255,255,255,0.9);
+      padding: 8px 10px;
+      border-radius: 8px;
+      z-index: 10;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">Sigma graph viewer</div>
+  <div id="container"></div>
+
+  <script type="module">
+    import Graph from "https://cdn.jsdelivr.net/npm/graphology@0.26.0/+esm";
+    import Sigma from "https://cdn.jsdelivr.net/npm/sigma@3.0.2/+esm";
+
+    const response = await fetch("./graph.json");
+    const data = await response.json();
+
+    const graph = new Graph();
+
+    for (const node of data.nodes) {
+      graph.addNode(node.key, {
+        label: node.label,
+        x: node.x,
+        y: node.y,
+        size: node.size,
+        color: node.color
+      });
+    }
+
+    for (const edge of data.edges) {
+      graph.addEdge(edge.source, edge.target, {
+        size: edge.size,
+        color: edge.color
+      });
+    }
+
+    new Sigma(graph, document.getElementById("container"));
+  </script>
+</body>
+</html>
