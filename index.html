@@ -264,6 +264,12 @@
       <img src="temporal_community_activity.png" alt="Votes cast per year by each community. Communities peak in different years." loading="lazy">
       <figcaption>Figure 8. Votes cast per year by each community. Communities peak in different years.</figcaption>
     </figure>
+    <p>Not only did communities differ in when they were most active — they also differed in how selective they became over time. Some communities were consistently strict; others grew more critical as the decade progressed.</p>
+    
+    <figure class="figure">
+      <img src="temporal_community_support.png" alt="Support ratio per community over time." loading="lazy">
+      <figcaption>Figure 8b. Support ratio per community over time.</figcaption>
+    </figure>
     <h3>The community became more selective</h3>
     <p>The proportion of support votes fell over the decade, and the fraction of candidates who were actually promoted dropped markedly — particularly after 2007. Becoming a Wikipedia admin grew significantly harder.</p>
     
@@ -291,20 +297,15 @@
     <p>Retention was high in the early years when the community was small and tight-knit, but fell as the voter base expanded rapidly in 2005–2006. By the late 2000s, large numbers of new voters joined each year while many veterans stopped participating — contributing to community fragmentation.</p>
     
     <figure class="figure">
-      <img src="community_retention_breakdown.png" alt="Returning vs new voters broken down per community." loading="lazy">
+      <img src="community_voter_retention.png" alt="Returning vs new voters broken down per community." loading="lazy">
       <figcaption>Figure 12. Returning vs new voters broken down per community.</figcaption>
     </figure>
     <h3>The most contested elections</h3>
     <p>Not all RfA elections were routine. Some candidates attracted fierce opposition. The most controversial candidate each year is shown below — blue bars indicate candidates promoted despite the controversy, red those who failed. Some heavily-opposed candidates still made it through, reflecting Wikipedia's consensus-based rather than majority-vote process.</p>
     
     <figure class="figure">
-      <img src="controversial_candidates.png" alt="Average controversy trend (top) and most controversial candidate per year (bottom). Blue = promoted, red = failed." loading="lazy">
+      <img src="controversy_trends.png" alt="Average controversy trend (top) and most controversial candidate per year (bottom). Blue = promoted, red = failed." loading="lazy">
       <figcaption>Figure 13. Average controversy trend (top) and most controversial candidate per year (bottom). Blue = promoted, red = failed.</figcaption>
-    </figure>
-    
-    <figure class="figure">
-      <img src="community_controversy_breakdown.png" alt="How each community voted on the top-3 most contested candidates in sampled years." loading="lazy">
-      <figcaption>Figure 14. How each community voted on the top-3 most contested candidates in sampled years.</figcaption>
     </figure>
   </section>
 
@@ -315,7 +316,7 @@
     <p class="lead">A true echo chamber is not just a group that agrees — its members form dense clusters of mutual agreement and rarely connect with outsiders. We measured this for each community.</p>
     
     <figure class="figure">
-      <img src="echo_chamber_metrics.png" alt="Internal clustering coefficient, edge density, and agreement strength per community." loading="lazy">
+      <img src="community_echo_metrics.png" alt="Internal clustering coefficient, edge density, and agreement strength per community." loading="lazy">
       <figcaption>Figure 15. Internal clustering coefficient, edge density, and agreement strength per community.</figcaption>
     </figure>
     
@@ -336,13 +337,13 @@
     <p class="lead">Across all 198,275 votes, oppose comments average <strong>44.8 words</strong> while support comments average just <strong>19.3 words</strong>. Voters who reject a candidate feel compelled to justify themselves in detail; supporters often write just a few words ("Support per nom" is a common phrase).</p>
     
     <figure class="figure">
-      <img src="text_length_by_vote.png" alt="Vote comment length by vote type — box plot and density distribution." loading="lazy">
+      <img src="comment_length_analysis.png" alt="Vote comment length by vote type — box plot and density distribution." loading="lazy">
       <figcaption>Figure 17. Vote comment length by vote type — box plot and density distribution.</figcaption>
     </figure>
     <p>This effect varies by community. Community 0 shows the largest gap — their oppose votes average 33 extra words compared to their support votes. The effect holds consistently across all communities, confirming it is a structural feature of the RfA process.</p>
     
     <figure class="figure">
-      <img src="text_length_by_community.png" alt="Mean comment length per community by vote type (left) and the oppose verbosity premium per community (right)." loading="lazy">
+      <img src="community_comment_length.png" alt="Mean comment length per community by vote type (left) and the oppose verbosity premium per community (right)." loading="lazy">
       <figcaption>Figure 18. Mean comment length per community by vote type (left) and the oppose verbosity premium per community (right).</figcaption>
     </figure>
     <div class="finding">
@@ -351,7 +352,7 @@
     </div>
     
     <figure class="figure">
-      <img src="text_length_over_time.png" alt="Average comment length over time by vote type." loading="lazy">
+      <img src="comment_length_trends.png" alt="Average comment length over time by vote type." loading="lazy">
       <figcaption>Figure 19. Average comment length over time by vote type.</figcaption>
     </figure>
   </section>
@@ -370,12 +371,12 @@
     </div>
     
     <figure class="figure">
-      <img src="2013_community_votes_bar.png" alt="Votes cast in 2013 broken down by community." loading="lazy">
+      <img src="community_activity_2013.png" alt="Votes cast in 2013 broken down by community." loading="lazy">
       <figcaption>Figure 20. Votes cast in 2013 broken down by community.</figcaption>
     </figure>
     
     <figure class="figure">
-      <img src="2013_community_monthly.png" alt="Monthly voting activity across 2013 by community." loading="lazy">
+      <img src="community_activity_2013_monthly.png" alt="Monthly voting activity across 2013 by community." loading="lazy">
       <figcaption>Figure 21. Monthly voting activity across 2013 by community.</figcaption>
     </figure>
     <h3>What the 2013 communities talked about</h3>
@@ -389,7 +390,7 @@
       <p>Top terms: <em>tools, work, concerns, experience, content</em></p>
       
     <figure class="figure">
-      <img src="2013_community_0_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 0." loading="lazy">
+      <img src="community_0_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 0." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 0.</figcaption>
     </figure>
     </div>
@@ -401,7 +402,7 @@
       <p>Top terms: <em>tools, reason, work, seems, opposes</em></p>
       
     <figure class="figure">
-      <img src="2013_community_1_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 1." loading="lazy">
+      <img src="community_1_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 1." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 1.</figcaption>
     </figure>
     </div>
@@ -413,7 +414,7 @@
       <p>Top terms: <em>tools, concerns, work</em></p>
       
     <figure class="figure">
-      <img src="2013_community_2_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 2." loading="lazy">
+      <img src="community_2_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 2." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 2.</figcaption>
     </figure>
     </div>
@@ -425,7 +426,7 @@
       <p>Top terms: <em>tools, work, experience</em></p>
       
     <figure class="figure">
-      <img src="2013_community_3_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 3." loading="lazy">
+      <img src="community_3_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 3." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 3.</figcaption>
     </figure>
     </div>
@@ -437,7 +438,7 @@
       <p>Top terms: <em>tools, work</em></p>
       
     <figure class="figure">
-      <img src="2013_community_4_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 4." loading="lazy">
+      <img src="community_4_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 4." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 4.</figcaption>
     </figure>
     </div>
@@ -449,7 +450,7 @@
       <p>Top terms: <em>tools, work, experience</em></p>
       
     <figure class="figure">
-      <img src="2013_community_5_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 5." loading="lazy">
+      <img src="community_5_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 5." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 5.</figcaption>
     </figure>
     </div>
@@ -461,7 +462,7 @@
       <p>Top terms: <em>(too small to interpret)</em></p>
       
     <figure class="figure">
-      <img src="2013_community_6_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 6." loading="lazy">
+      <img src="community_6_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 6." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 6.</figcaption>
     </figure>
     </div>
@@ -473,7 +474,7 @@
       <p>Top terms: <em>tools, work, concerns</em></p>
       
     <figure class="figure">
-      <img src="2013_community_7_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 7." loading="lazy">
+      <img src="community_7_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 7." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 7.</figcaption>
     </figure>
     </div>
@@ -485,7 +486,7 @@
       <p>Top terms: <em>tools, work</em></p>
       
     <figure class="figure">
-      <img src="2013_community_8_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 8." loading="lazy">
+      <img src="community_8_2013_wordcloud.png" alt="TF-IDF word cloud for 2013 Community 8." loading="lazy">
       <figcaption>Figure . TF-IDF word cloud for 2013 Community 8.</figcaption>
     </figure>
     </div>
@@ -501,28 +502,7 @@
           <div class="download-icon">&#8659;</div>
           <div>
             <a href="https://snap.stanford.edu/data/wiki-RfA.txt.gz" class="download-link">Raw RfA voting data</a>
-            <p class="download-desc">Original dataset from Stanford SNAP: 198,275 voting records in plain text.</p>
-          </div>
-        </div>
-        <div class="download-card">
-          <div class="download-icon">&#8659;</div>
-          <div>
-            <a href="https://raw.githubusercontent.com/Stampe04/CSS_Project/main/rfa_graph_links.json" class="download-link">RfA graph links (JSON)</a>
-            <p class="download-desc">Processed graph edge list with vote weights.</p>
-          </div>
-        </div>
-        <div class="download-card">
-          <div class="download-icon">&#8659;</div>
-          <div>
-            <a href="https://raw.githubusercontent.com/Stampe04/CSS_Project/main/rfa_graph.csv" class="download-link">RfA graph (CSV)</a>
-            <p class="download-desc">Flat CSV of all voting relationships, easy to open in Excel or Python.</p>
-          </div>
-        </div>
-        <div class="download-card">
-          <div class="download-icon">&#8659;</div>
-          <div>
-            <a href="https://raw.githubusercontent.com/Stampe04/CSS_Project/main/wikipedia_admins.csv" class="download-link">Wikipedia admins (CSV)</a>
-            <p class="download-desc">List of Wikipedia administrators referenced in the dataset.</p>
+            <p class="download-desc">Original dataset from Stanford SNAP: 198,275 voting records in plain text format.</p>
           </div>
         </div>
   </section>
@@ -537,7 +517,7 @@
         <strong>Explainer Notebook</strong>
         <p>Full pipeline with code and commentary — graph construction, community detection, text analysis, temporal analysis, echo chambers. Hosted on nbviewer.</p>
       </div>
-      <a href="https://nbviewer.org/github/Stampe04/CSS_Project/blob/main/Explainer%20Notebook.ipynb" target="_blank" rel="noopener" class="explainer-btn">Open Notebook &rarr;</a>
+      <a href="https://nbviewer.org/github/Stampe04/CSS_AssignmentB/blob/main/Notebook.ipynb" target="_blank" rel="noopener" class="explainer-btn">Open Notebook &rarr;</a>
     </div>
   </section>
 
